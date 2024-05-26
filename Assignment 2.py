@@ -204,8 +204,7 @@ data = export_graphviz(DecisionTreeClassifier(max_depth=12).fit(x_train_n, y_tra
                        feature_names = features_n,
                        class_names = ['Dissatisfied (0)', 'Satisfied (1)'], 
                        filled = True, rounded = True, special_characters = True)
-# we have intentionally kept max_depth short here to accommodate the entire visual-tree, best result comes with max_depth = 12
-# we have taken only really important features here to accommodate the entire tree picture
+
 graph = graphviz.Source(data)
 graph
 
